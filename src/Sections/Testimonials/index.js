@@ -96,7 +96,7 @@ const Testimonials = () => {
           />
 
           <Card
-            text="Addicted Networks has been essential part of our business. I would definetly recommend Addicted Networks. It has been amazing to have them."
+            text="Addicted Networks has been essential part of our business. I would definitely recommend Addicted Networks. It has been amazing to have them."
             name="Elijah (CodeCall)"
             image="avatar-3"
           />
