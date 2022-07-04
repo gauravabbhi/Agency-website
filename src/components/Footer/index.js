@@ -47,22 +47,19 @@ const Footer = () => {
   return (
     <FOOTER>
       <LeftText>
-        © 2021 Built and Design by{" "}
-        <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
-          @CodeBucks
-        </a>
+        GSTIN: 03GWDPS2201C1Z6
       </LeftText>
       <RightText>
-        Reach out to me via 😉
-        <a href="https://twitter.com/code_bucks">
-          <img src={Twitter} alt="Twitter" />
-        </a>
+        Reach out to me via
+        {/*<a href="https://twitter.com/code_bucks">*/}
+        {/*  <img src={Twitter} alt="Twitter" />*/}
+        {/*</a>*/}
+        {/*&nbsp;*/}
+        {/*<a href="https://www.instagram.com/code.bucks/">*/}
+        {/*  <img src={Instagram} alt="Instagram" />*/}
+        {/*</a>*/}
         &nbsp;
-        <a href="https://www.instagram.com/code.bucks/">
-          <img src={Instagram} alt="Instagram" />
-        </a>
-        &nbsp;
-        <a href="mailto:codebucks27@gmail.com?subject=Email From Your Website">
+        <a href="mailto:sandhu6698@gmail.com?subject=Email From Your Website">
           <img src={Gmail} alt="Gmail" />
         </a>
       </RightText>
@@ -71,5 +68,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-//© 2021 by CodeBucks. Design by @CodeBucks.

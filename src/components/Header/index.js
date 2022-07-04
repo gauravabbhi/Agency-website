@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/white-logo.png";
 
 const Headers = styled.header`
   display: flex;
@@ -29,6 +29,15 @@ const Logo = styled.a`
   cursor: pointer;
   img {
     margin-right: 0.5rem;
+    height: 9vh;
+    width: auto;
+  }
+  @media only Screen and (max-width: 48em) {
+    img {
+      margin-right: -0.5rem;
+      height: 8vh;
+      width: auto;
+    }
   }
 `;
 
@@ -234,8 +243,7 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
-        <img src={logo} alt="CodeBucks" />
-        <h3>CodeBucks</h3>
+        <img src={logo} alt="Addicted Networks"/>
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>

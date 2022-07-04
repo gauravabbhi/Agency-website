@@ -125,26 +125,37 @@ const Row = styled.div`
   }
 `;
 const Contact = () => {
+  function handleForm(e) {
+    e.preventDefault()
+    let {name, email, message} = e.target
+    if(!name.value || !email.value || !message.value) {
+      alert('Please fill out all fields')
+    } else {
+      alert('Your details have been received, Thanks!')
+    }
+  }
+
   return (
     <ContactSection id="contact">
       <Title>Get in touch</Title>
       {/* <Text>Lorem ipsum dolor sit amet, consectetur adipisicing.</Text> */}
-      <Icons>
-        <a href="https://www.facebook.com/">
-          {" "}
-          <img src={Facebook} alt="Facebook" />
-        </a>
-        <a href="https://www.linkedin.com//">
-          <img src={LinkedId} alt="LinkedId" />
-        </a>
-        <a href="https://twitter.com/">
-          <img src={Twitter} alt="Twitter" />
-        </a>
-        <a href="https://www.instagram.com/">
-          <img src={Instagram} alt="Instagram" />
-        </a>
-      </Icons>
-      <Form>
+      {/*<Icons>*/}
+      {/*  <a href="https://www.facebook.com/">*/}
+      {/*    {" "}*/}
+      {/*    <img src={Facebook} alt="Facebook" />*/}
+      {/*  </a>*/}
+      {/*  <a href="https://www.linkedin.com//">*/}
+      {/*    <img src={LinkedId} alt="LinkedId" />*/}
+      {/*  </a>*/}
+      {/*  <a href="https://twitter.com/">*/}
+      {/*    <img src={Twitter} alt="Twitter" />*/}
+      {/*  </a>*/}
+      {/*  <a href="https://www.instagram.com/">*/}
+      {/*    <img src={Instagram} alt="Instagram" />*/}
+      {/*  </a>*/}
+      {/*</Icons>*/}
+
+      <Form onSubmit={handleForm}>
         <Row>
           <input name="name" type="text" placeholder="your name" />
           <input
@@ -154,7 +165,7 @@ const Contact = () => {
           />
         </Row>
         <textarea
-          name=""
+          name="message"
           id=""
           cols="30"
           rows="2"
@@ -162,9 +173,7 @@ const Contact = () => {
         ></textarea>
         <div style={{ margin: "0 auto" }}>
           <button
-            onClick={(e) => {
-              e.preventDefault();
-            }}
+           type={"submit"}
           >
             Submit
           </button>
