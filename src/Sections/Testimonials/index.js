@@ -84,28 +84,21 @@ const Testimonials = () => {
       <Carousal>
         <Slider {...settings}>
           <Card
-            text="Addicted Networks has been essential part of our business. I would definetly
-        recommend Addicted Networks. It has been amazing to have them."
-            name="Jenny (Yerish Studios)"
+            text="Always great. Grasps my concepts quickly, and delivers my vision or better! I highly recommend."
+            name="Jenny Smith"
             image="avatar-1"
           />
 
           <Card
-            text="Addicted Networks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
-            name="Raman (Aperion)"
+            text="Excellent work. Delivered fast and well reviewed everything. I will be looking forward to working with him again on future projects"
+            name="Raman"
             image="avatar-2"
           />
 
           <Card
-            text="Addicted Networks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
+            text="Addicted Networks has been essential part of our business. I would definetly recommend Addicted Networks. It has been amazing to have them."
             name="Elijah (CodeCall)"
             image="avatar-3"
-          />
-
-          <Card
-            text="Addicted Networks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
-            name="Jashan (Nutech Engineering)"
-            image="avatar-4"
           />
         </Slider>
       </Carousal>
